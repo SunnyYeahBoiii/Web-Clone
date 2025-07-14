@@ -1,0 +1,141 @@
+body{
+    text-align: center;
+    background-color: black;
+    font-family: Arial, sans-serif;
+}
+
+p , h1 , h2 {
+    color: white;
+}
+
+p{
+    font-size: 100%;
+}
+h1{
+    font-size: 200%;    
+}
+
+#BLOCK1 {
+    width: 1000px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+
+#BLOCK2 {
+    margin-top: 100px;
+}
+
+#left {
+    width: 45%;
+    text-align: left;
+}
+
+#right {
+    width: 50%;
+    position: relative;
+}
+.PICTURE1 {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#form-button{
+    color: white;
+    padding-left: 100px;
+    padding-right: 100px;
+    background: linear-gradient(to right , #ff2d2d, #800000);
+    border-radius: 10px;
+}
+
+#BLOCK3{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    width: 1000px;
+    border: 4px solid rgb(65, 85, 114);
+    border-radius: 40px;
+    margin-top: 100px;
+}
+
+#BLOCK3 > p {
+    font-size: 25px;;
+    text-align: left;
+    margin-left: 40px;
+    margin-right: 20px;
+    margin-top: 40px;
+}
+
+#BLOCK4 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+    margin-top: 100px;
+}
+
+#BLOCK5{
+    display: flex;
+    align-items: center;
+}
+
+.item1{
+    background-image: url(https://w.ladicdn.com/s500x500/5e874668e0f4570769c1795e/frame-389-20250602042454-rssdg.png);
+    background-size: 150px 150px;
+    background-repeat: no-repeat;
+    background-position: 90px 0;
+    margin-left: 30px;
+    width: 300px;
+    height: 300px;
+    border: 2px solid red;
+}
+
+.item2{
+    background-image: url(https://w.ladicdn.com/s500x500/5e874668e0f4570769c1795e/frame-390-20250602042454-aedoj.png);
+    background-size: 150px 150px;
+    background-repeat: no-repeat;
+    background-position: 90px 0;
+    margin-left: 30px;
+    width: 300px;
+    height: 300px;
+    border: 2px solid red;
+}
+
+.item3{
+    background-image: url(https://w.ladicdn.com/s500x500/5e874668e0f4570769c1795e/frame-392-20250602042454-mcmjs.png);
+    background-size: 150px 150px;
+    background-repeat: no-repeat;
+    background-position: 90px 0;
+    margin-left: 30px;
+    width: 300px;
+    height: 300px;
+    border: 2px solid red;
+}
+
+.item4{
+    background-image: url(https://w.ladicdn.com/s500x500/5e874668e0f4570769c1795e/frame-391-20250602042454-wgwlm.png);
+    background-size: 150px 150px;
+    background-repeat: no-repeat;
+    background-position: 90px 0;
+    margin-left: 30px;
+    width: 300px;
+    height: 300px;
+    border: 2px solid red;
+}
+
+.text{
+    font-size: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: rgb(255, 135, 43);
+    text-transform: capitalize;
+}
+.text2{
+    font-size: 15x;
+    margin-left: 5%;
+    margin-right: 5%;
+}
