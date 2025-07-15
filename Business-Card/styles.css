@@ -1,0 +1,73 @@
+body{
+    background-color: rosybrown;
+    font-family: 'Arial' , sans-serif;
+}
+
+h2 {
+    text-align: center;
+}
+
+p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.business-card{
+    font-size: 16px;
+    padding: 20px 20px 20px 20px;
+    text-align: center;
+    margin-top: 100px;
+    width: 300px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    
+}
+
+.profile-image {
+    max-width: 100%;
+    width: 150px;
+    height: 150px;
+}
+
+.social-media{
+    text-align: left;
+}
+
+.icon1{
+    margin-left:15%;
+    width: 30px;
+    height: 30px;
+}
+.icon2{
+    margin-left: 20%;
+    width: 30px;
+    height: 30px;
+}
+.icon3{
+    margin-left: 20%;
+    width: 30px;
+    height: 30px;
+}
+
+.link{
+    text-decoration: none;
+}
+
+a:visited{
+    color: black;
+}
+a:active{
+    color: gray;
+}
+a:hover{
+    color: gray;
+}
+a{
+    color: black;
+}
+
+address {
+    font-style: normal;
+}
