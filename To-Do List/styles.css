@@ -1,0 +1,52 @@
+h2{
+    padding-top: 30px;
+    text-align: center;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+#to-do-list {
+    width: 500px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    border-radius: 20px;
+}
+
+.item-list{
+    background-color: #e5f1e5;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px 20px 20px -20px;
+    
+}
+
+.sub-item{
+    list-style-type: square;
+}
+
+.todo-list{
+    line-height: 2;
+    list-style-type: none;
+    list-style-position: inside;
+}
+
+a:visited {
+    color: green;
+}
+
+a:link{
+    color: purple;
+}
+
+a:hover{
+    color: rgb(71, 1, 71);
+}
+
+a:focus{
+    border: 5px solid red;
+}
