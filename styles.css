@@ -1,0 +1,42 @@
+body{
+    text-align: center;
+    background-color: rgb(241, 240, 240);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    padding-top: 20px;
+}
+
+.preview-img{
+    margin: 20px;
+    width: 1024px;
+    height: 800px;
+}
+
+#img1{
+    width: 1024px;
+    height: 800px;
+}
+
+#img2{
+    width: 800px;
+    height: 800px;
+}
+
+.container{
+    padding: 50px;
+    padding-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    border-radius: 10px;
+    background-color: white;
+    width: 1100px;
+    height: 900px;
+}
+
+#header{
+    width: 500px;
+    height: 100px;
+}
