@@ -34,6 +34,7 @@ body{
 }
 
 #right{
+    background-size: ;
     color: white;   
     text-align: center;
     background: linear-gradient(to bottom, #2dd79b, #0faa76);
@@ -54,4 +55,8 @@ body{
 #sign-in-form{
     margin-top: auto;
     margin-bottom: auto;
+}
+
+button:hover{
+    background-color: #20966c;
 }
