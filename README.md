@@ -22,4 +22,4 @@
 ## Webpage: [Sign-in Page](./Webpages/Sign-in%20Page/)
 
 ## Webpage: [Plan Coffee Advertising Page](./Webpages/PLAN%20coffee/)
-- My friend asked me for help to code this webpage from a design he sent
+- My friend asked me for help to code this webpage from a design he sent.
