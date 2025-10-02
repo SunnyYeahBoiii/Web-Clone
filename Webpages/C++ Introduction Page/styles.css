@@ -1,0 +1,66 @@
+@media (max-width: 1024px){
+  *{
+    font-size: 0.5rem;
+  }
+}
+
+*{
+  font-size: 1.25rem;
+}
+
+body{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+main{
+  text-wrap: wrap;
+  position: fixed;
+  height: 94.3vh;
+  left: 30vw;
+  right: 0;
+  margin: 2px;
+  border-left: 2px solid gray;
+  padding: 10px;
+  overflow: scroll;
+}
+
+nav{
+  position: fixed;
+  width: 30vw;
+  height: 97vh;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  border-right: 2px solid gray;
+  margin: 2px;
+  overflow: scroll;
+}
+
+nav a{
+  text-align: center;
+  padding: 20px 0;
+  /* margin:5px; */
+  width: 100%;
+  background-color: white;
+  border-bottom: 2px solid gray;
+}
+
+nav a , nav a:hover , nav:visited , nav:focus{
+  text-decoration: none;
+  color: black;
+}
+
+nav a:first-of-type{
+  border-top: 2px solid gray;
+}
+
+nav header{
+  text-align: center;
+  font-size: 2rem;
+}
+
+section header{
+  font-size: 2rem;
+  font-weight: bold;
+}

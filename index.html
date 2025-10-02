@@ -1,50 +1,86 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Personal Portfolio</title>
+    <link rel = "stylesheet" href = "styles.css"/>
+  </head>
+  <body>
+    <img src = "images/icon.jpg" id = "sunny-icon"/>
+    <nav id = "navbar" hidden = "true">
+        <a href ="#introduction">Introduction</a>
+        <a href ="#projects">Projects</a>
+        <a href ="#contact">Contacts</a>
+    </nav>
 
-<html lang = "vn">
-    <head>
-        <meta charset = "utf-8">
-        <title>Web Clones - Main Page</title>
-        <meta name = "viewport" , content = "viewport=device-width , initial-scale=1.0"/>
-        <link rel = "stylesheet" , href = "styles.css">
-    </head>
-
-    <body>
-        <div id = "header" , class = "container">
-            <h1>Web Clones - Main Page</h1>
-            <p>This is the main page showing all the webpages that I have recreated</p>
+    <p id = "introduction"></p>
+    <section id = "welcome-section">
+        <div id = "welcome-text-container">
+        <h1 id = "introduction">Hi, I'm Sunny</h1>
+        <p>a Web Developer</p>
         </div>
+    </section>
     
-        <div class = "container">
-            <figure>
-                <img id = "img1" , class = "preview-img" , src = "./Previews/Minh Xin Chao Preview.jpg">
-                <figcaption>This is the preview of my cloned webpage of Minh xin chào</figcaption>
-                <figcaption>Original Page: <a href = "https://minhxinchao.com/optin-page-da-biet-ve-freelance?gad_source=2&gad_campaignid=22335961377&wbraid=ClkKCAjwss3DBhBFEkkAkIzbRKPBL1iTgP_imWoZNl5Jut8PB9sCGb6nu2sLeNlDi-HUACJI0rNpXqg7iyCUlm5FG_0tQG1fWuP-71Oe4btOcLXs6_-VGgInIQ"> Minh xin chào </a></figcaption>
-            </figure>
-            <a href = "./Webpages/Minhxinchao/index.html"><button>Move to Page</button></a>
-        </div>
-        
-        <div class = "container">
-            <figure>
-                <img id = "img2" , class = "preview-img" , src = "./Previews/To-Do List Preview.jpg">
-                <figcaption>This is the preview of my To-Do List Webpage</figcaption>
-            </figure>
-            <a href = "./Webpages/To-Do List/index.html"><button>Move to Page</button></a>
-        </div>
-        
-        <div class = "container">
-            <figure>
-                <img id = "img3" , class = "preview-img" , src = "./Previews/Business-Card-Preview.jpg">
-                <figcaption>This is the preview of my Business Card</figcaption>
-            </figure>
-            <a href = "./Webpages/Business-Card/index.html"><button>Move to Page</button></a>
+    <section id = "project-section">
+        <p id = "projects"></p>
+        <h2>These are some of my projects</h2>
+        <hr/>
+        <div class = "project-tiles-wrapper">
+            <div class = "project-tiles">
+                <h3 class = "project-title"> Minh xin chào</h3>
+                <img src = "./images/Minh Xin Chao Preview.jpg" alt ="Preview image of" class = "project-tiles-image"/>
+                <a href = "./Webpages/Minhxinchao/index.html" target = "_blank"><p>View Webpage</p></a>
+            </div>
+                
+            <div class = "project-tiles">
+                <h3 class = "project-title">Bussiness Card</h3>
+                <img src = "./images/Business-Card-Preview.jpg" alt ="Preview image of" class = "project-tiles-image"/>
+                <a href = "./Webpages/Business-Card/index.html" target = "_blank"><p>View Webpage</p></a>
+            </div>
+            
+            <div class = "project-tiles">
+                <h3 class = "project-title">Plan coffee Blog Page</h3>
+                <img src = "./images/PLANcoffe.png" class = "project-tiles-image"/>
+                <a href = "./Webpages/PLAN coffee/index.html" target = "_blank"><p>View Webpage</p></a>
+            </div>
+            
+            <div class = "project-tiles">
+                <h3 class = "project-title">Sign in Page</h3>
+                <img src = "./images/signinpage.png" class = "project-tiles-image"/>
+                <a href = "./Webpages/Sign-in Page/index.html" target = "_blank"><p>View Webpage</p></a>
+            </div>
+            
+            <div class = "project-tiles">
+                <h3 class = "project-title">C++ Introduction Page</h3>
+                <img src = "./images/C++Introduction.png" class = "project-tiles-image"/>
+                <a href = "./Webpages/C++ Introduction Page/" target = "_blank"><p>View Webpage</p></a>
+            </div>
+            
         </div>
 
-        <div class = "container">
-            <figure>
-                <img id = "img3" , class = "preview-img" , src = "./Previews/PLANcoffe.png">
-                <figcaption>This is the preview of my Business Card</figcaption>
-            </figure>
-            <a href = "./Webpages/PLAN coffee/index.html"><button>Move to Page</button></a>
+        <p id = "talk">If you are interested, click Show all</p>
+        <a href = "https://github.com/SunnyYeahBoiii/Web-Clone/tree/main" target = "_blank" id = "profile-link" >Show all</a>
+    </section>
+
+    
+
+    <footer id = "contact">   
+        <h2>Let's Work Together</h2>
+        <p>I'm available at any time</p>
+        <div class = "link-container">
+            <a href = "https://www.facebook.com/minh.phuong.vu.509829/" alt = "facebook-icon" class = "contact-link" target="_blank">
+                <img class = "contact-icons" src = "./images/facebook.png"/>
+                <p>Facebook me</p>
+            </a>
+            <a href = "https://github.com/SunnyYeahBoiii" alt = "github-icon" class = "contact-link" target="_blank">
+                <img class = "contact-icons" src = "./images/github.png"/>
+                <p>Github me</p>
+            </a>
+            <a href = "mailto:vuminhphuongvt12345@gmail.com" alt = "email-icon" class = "contact-link" target="_blank">
+                <img class = "contact-icons"src = "./images/gmail.png"/>
+                <p>Email me</p>
+            </a>
         </div>
-    </body>
+    </footer>
+  </body>
 </html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Technical Documentation Page</title>
+    <link rel  ="stylesheet" , href = "styles.css">
+  </head>
+
+  <body>
+    <main id = "main-doc">
+      <section id = "Introduction_to_C++" , class ="main-section">
+        <header>Introduction to C++</header>
+        <p>C++ là một ngôn ngữ lập trình phổ thông được sử dụng rộng rãi trong nhiều lĩnh vực, bao gồm lập trình thi đấu</p>
+        <p>Ta có một đoạn code mẫu như sau:</p>
+        <code><pre>
+        #include &lt;iostream&gt;
+        using namespace std;
+                      
+        int main() {
+          cout &lt;&lt; "Hello World!";
+          return 0;
+        }
+        </pre></code>
+      </section>
+
+      <section id = "Variable_in_C++" , class ="main-section">
+        <header>Variable in C++</header>
+        <p>Biến trong C++ là một khai niệm cơ bản và gán liền với mọi chương trình. Ví dụ về việc khai báo một biến số nguyên tên A:</p>
+        <code><pre>
+        int a;
+        </pre></code>
+        <p>Ta có thể khởi gán biến A khi khai báo, cho nó một giá trị khởi đầu:</p>
+        <code><pre>
+        int a = 10;
+        </pre></code>
+        <p>Từ đó, ta có thể thấy được cú pháp khai báo trong C++ như sau:</p>
+        <code><pre>
+        kiểu_biến tên_biến;
+        </pre></code>
+        <p>Nói thêm về kiểu biến, trong C++ có các loại biến như:</p>
+        <ul>
+          <li>Loại số nguyên: int , long long</li>
+          <li>Loại số thực: double , float</li>
+          <li>Loại ký tự: char</li>
+          <li>Loại xâu kí tự: string</li>
+          <li>...</li>
+        </ul>
+        <p>Dựa vào các kiểu biến trên, ta có thể khai báo các biến tùy với yêu cầu của ta.</p>
+      </section>
+
+      <section id = "Input/Output_in_C++" , class ="main-section">
+        <header>Input/Output in C++</header>
+        <p>Để in ra màn hình một đoạn văn bản ta sẽ sử dụng cú pháp như sau</p>
+        <code><pre>
+        cout &lt;&lt; "Hello World" &lt;&lt; endl;
+        </pre></code>
+
+        <p>Ở đây, Hello World là đoạn văn bản được in ra. Nếu ta có một đoạn văn bản khác, có thể đặt nó trong dấu "văn bản" và dùng cú pháp như trên.</p>
+      
+        <p>Bên cạnh đó, ta có thể dùng để in ra một biểu thức hoặc một giá trị cụ thể. Ví dụ như sau</p>
+
+        <pre><code>
+        cout &lt;&lt; "1 + 2 = " &lt;&lt; 1 + 2 &lt;&lt; endl;  
+        </code></pre>
+        Với dòng code trên, nội dung sai sau sẽ được in ra màn hình:
+        <pre><code>
+        1 + 2 = 3
+        </code></pre>
+        <p>Ta có thể hiểu rằng "1 + 2 = " là một văn bản nên khi in ra màn hình nội dung sẽ được giữ nguyên. Ngoài ra, 1 + 2 sẽ là một biểu thức và sẽ được tính thành giá trị nên khi in ra màn hình giá trị của phép tính 1 + 2 sẽ được xuất ra.</p>
+
+        <p>Để đọc vào trong C++, ta sử dụng cin với cú pháp như sau:</p>
+        <pre><code>
+        int a;
+        cin >> a;
+        </code></pre>
+
+        <p>Để đọc vào, ta bắt buộc phải có biến để lưu giá trị. Từ đó, ta có thể làm việc với các biến sau khi đọc giá trị từ đầu vào.</p>
+
+      </section>
+      <section id = "If-else_in_C++" class ="main-section">
+        <header>If-else in C++</header>
+        <p>Trong C++ tồn tại cấu trúc If-else để kiểm tra điều kiện và thực thi code nếu như điều kiện ấy thỏa mãn. Ví dụ như sau</p>
+        <pre><code>
+        if(n % 2 == 0)
+          cout &lt;&lt; n &lt;&lt; " là số chẵn" &lt;&lt; endl;
+        else 
+          cout &lt;&lt; n &lt;&lt; " là số lẻ" &lt;&lt; endl;
+        </code></pre>
+        
+        <p>Khi đoạn code trên được thực thi, chương trình sẽ kiểm tra nếu n chia hết cho 2 thì n là số chẵn, ngược lại sẽ biết được n là số lẻ. Với cấu trúc:</p>
+        <pre><code>
+        if(Điều_kiện){
+          code A
+        }else{
+          code B
+        }
+        </code></pre>
+        <p>Đây là dạng cấu trúc tổng quát của If-else, nếu Điều_kiện thỏa mãn thì đoạn code A sẽ được chạy, ngược lại code B sẽ được chạy.</p>
+
+      </section>
+      <section id = "Loops_in_C++" class ="main-section">
+        <header>Loops in C++</header>
+        <ul>
+          <li>Loại số nguyên: int , long long</li>
+          <li>Loại số thực: double , float</li>
+          <li>Loại ký tự: char</li>
+          <li>Loại xâu kí tự: string</li>
+          <li>...</li>
+        </ul>
+      </section>
+    </main>
+
+    <nav id = "navbar">
+      <header>C++ cơ bản</header>
+      <a class = "nav-link" href = "#Introduction_to_C++">Introduction to C++</a>
+      <a class = "nav-link" href = "#Variable_in_C++">Variable in C++</a>
+      <a class = "nav-link" href = "#Input/Output_in_C++">Input/Output in C++</a>
+      <a class = "nav-link" href = "#If-else_in_C++">If-else in C++</a>
+      <a class = "nav-link" href = "#Loops_in_C++">Loops in C++</a>
+    </nav>
+  </body>
+</html>
