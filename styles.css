@@ -160,16 +160,16 @@ hr{
   position: absolute;
   left: -20%;
   content: "<";
-  animation: pop-up 0.5s ease;
   opacity: 100%;
+  transition: opacity 0.3s ease;
 }
 
 .project-tiles:hover a p::after{
   position: absolute;
   right: -20%;
-  animation: pop-up 0.5s ease;
   content: "/>";
   opacity: 100%;
+  transition: opacity 0.3s ease;
 }
 
 .project-tiles a p::before{
@@ -177,15 +177,17 @@ hr{
   position: absolute;
   left: -20%;
   content: "<";
-  animation: pop-down 0.5s ease;
+  transition: opacity 0.5s ease;
+  opacity: 0%;
 }
 
 .project-tiles a p::after{
   opacity: 0%;
   position: absolute;
   right: -20%;
-  animation: pop-down 0.5s ease;
+  transition: opacity 0.5s ease;
   content: "/>";
+  opacity: 0%;
 }
 
 #profile-link{
@@ -196,31 +198,11 @@ hr{
   color: black;
   background-color: rgb(224, 224, 224);
   padding: 10px;
-  animation: scale-down 1s ease;
+  transition: transform 1s ease;
 }
 
-@keyframes scale-up {
-    0%{
-        transform: scale(100%);
-    }
-
-    100%{
-        transform: scale(125%);
-    }
-}
-
-@keyframes scale-down {
-    0%{
-        transform: scale(125%);
-    }
-
-    100%{
-        transform: scale(100%);
-    }
-}
 
 #profile-link:hover{
-    animation: scale-up 1s ease;
     transform: scale(125%);
 }
 
@@ -265,31 +247,11 @@ hr{
 
   text-decoration: none;
   color: white;
-  animation: link-unhovered 1s ease;
-}
 
-@keyframes link-hovered{
-  0%{
-    transform: translateY(0px);
-  }
-
-  100%{
-    transform: translateY(10px);
-  }
-}
-
-@keyframes link-unhovered{
-  0%{
-    transform: translateY(10px);
-  }
-
-  100%{
-    transform: translateY(0px);
-  }
+  transition: transform 1s ease;
 }
 
 .contact-link:hover{
-  animation: link-hovered 1s ease;
   transform: translateY(20px);
   /* text-decoration: underline; */
 }
