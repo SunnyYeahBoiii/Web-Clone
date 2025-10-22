@@ -1,0 +1,45 @@
+:root{
+    --background-color: #1B1F3B;
+    --box-color: #6E7DAB;
+    --font-color: #D2D0BA;
+}
+
+*{
+    background-color: var(--background-color);
+    color: var(--font-color);
+    font-family: Consolas , sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-container{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+}
+
+.number{
+    background-color: var(--box-color);
+    width: 7vh;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+    margin: 10px;
+}
+
+#sort-btn{
+    width: 50vw;
+    height: 5vh;
+    background-color: var(--box-color);
+}
+
