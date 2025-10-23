@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Contact form</title>
+  <link rel = "stylesheet" href = "styles.css"/>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+
+  <script defer src = "script.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Karla:ital,wght@0,200..800;1,200..800&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <form id = "complaint-form" action="https://api.web3forms.com/submit" method="POST" novalidate>
+    <input type="hidden" name="access_key" value="a801a817-4964-41b1-89f5-f2aa556cade9">
+    
+    
+    <h1>Contact Us</h1>
+
+    <div id = "first-name-ctn">
+      <label class = "labels" for = "first-name" >First Name</label><br>
+      <input class = "green-box" id = "first-name" name = "first-name" required/>
+      <p class = "alert hidden">This field is required</p>
+    </div>
+
+    <div id = "last-name-ctn">
+      <label class = "labels" for = "last-name">Last Name</label><br>
+      <input class = "green-box" id = "last-name" name = "last-name" required/>
+      <p class = "alert hidden">This field is required</p>
+    </div>
+
+    <div id = "email-ctn">
+      <label class = "labels" for = "email">Email Address</label><br>
+      <input class = "green-box" id = "email" name = "email" required/>
+      <p class = "alert hidden">Please enter a valid email</p>
+    </div>
+
+    <div id = "query-type-ctn">
+      <label class = "labels" id = "query-type-label">Query Type</label>
+      <div class = "green-box" id = "general-enquiry-ctn">
+        <div class = "choice-ctn">
+          <input required type = "radio" name = "query-type" value = "general-enquiry" id = "general-enquiry"/>
+          <label  for = "general-enquiry">General Enquiry</label>
+        </div>
+      </div>
+      
+      <div class = "green-box" id = "support-request-ctn">
+        <div class = "choice-ctn">
+          <input required type = "radio" name = "query-type" value = "support-request" id = "support-request"></input>
+          <label for = "support-request">Support Request</label>
+        </div>
+      </div>
+      <p class = "alert hidden">Please select a query type</p>
+    </div>
+
+
+    <div id = "msg-ctn">
+      <label class = "labels" for = "message">Message</label><br>
+      <textarea class = "green-box" id = "message" name = "message" value = "message" required></textarea>
+      <p class = "alert hidden">This field is required</p>
+    </div>
+
+    <div id = "consent-ctn">
+      <span>
+        <input class = "check-box" type = "checkbox" name = "consent" value = "consent" id = "consent" required/>
+        <label class = "labels">I consent to being contacted by the team</label>
+      </span>
+      <p class = "alert hidden">To submit this form, please consent being contacted</p>
+    </div>
+
+    <button type = "submit" id = "submit-btn">Submit</button>
+    
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+      Coded by <a href="https://www.facebook.com/minh.phuong.vu.509829/" target="_blank">Sunny</a>.
+    </div>
+
+  </form>
+</body>
+</html>

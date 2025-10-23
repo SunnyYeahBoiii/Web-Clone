@@ -2,53 +2,56 @@
 <html lang="en">
 
 <head>
-    <title>Customer Complaint Form</title>
+    <title>Bubble Sort Demonstration</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link rel="icon" href="./images/icons8-sort-amount-up-32.png">
 </head>
 
 <body>
     <h1>Bubble Sort Demonstration</h1>
-    
+
     <div id = "box-container">
         <div class = "place-holder" id = "smaller-holder"></div>
-
         <div class = "wrapper">
-            <div class = "place-holder">
-                <div class = "number forward">1</div>
-            </div>
-            
-            <div class = "place-holder">
-                <div class = "number forward">1</div>
-            </div>
-            
-            <div class = "place-holder">
-                <div class = "number forward">1</div>
-            </div>
-            
-            <div class = "place-holder">
-                <div class = "number forward">1</div>
-            </div>
-            
-            <div class = "place-holder">
-                <div class = "number forward">1</div>
-            </div>
-            
-            <div class = "place-holder">
-                <div class = "number forward">1</div>
-            </div>
-            
-            <div class = "place-holder">
-                <div class = "number forward">1</div>
-            </div>
         </div>
-        
         <div class = "place-holder" id = "bigger-holder"></div>
     </div>
 
-    <button type="button" id = "sort-btn">Sort</button>
-    <script src="script.js"></script>
+    <div id = "button-ctn">
+        <button type="button" class = "button" id = "sort-btn">Sort</button>
+        <button type="button" class = "button" id = "add-btn">Add a Number</button>
+        <button type="button" class = "button" id = "clear-btn"><img class = "icon" src = "./images/icons8-trash-30.png"/></button>
+    </div>
+    <div id = "blur-background"></div>
+    <dialog class = "dialog hidden" id = "add-number-diag" open>
+        <p>Add a positive number</p>
+        <p>smaller than 100</p>
+
+        <input required min = 1 max = 100 type = "number" id = "number-input"/>
+        
+        <button type="button" id = "add-done-btn">Add</button>
+        <button type="button" id = "add-close-btn">Close</button>
+    </dialog>
+    
 </body>
 
 </html>
+
+
+<!--
+Các tính năng cần thêm vào:
+    - Thêm số - CHECK
+        + popup dialog - CHECK
+        + popdown dialog - CHECK
+            . close - CHECK
+            . done - validation - CHECK
+    - Xóa số - CHECK
+    - Edit số - CHECK
+    - Thực hiện được bubble sort - still BUGGY but kinda works
+        + bugged on desktop screen
+        + add more colors
+    - Clear - CHECK 
+-->
