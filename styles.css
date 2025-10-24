@@ -2,9 +2,9 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
   font-size: 1.1rem;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 h1 , h2 , h3, footer{
@@ -307,6 +307,7 @@ hr{
   #more-icon:hover #more-info{
       display: block;
       height: 200px;
+      
   }
 
   .icon-dash{
@@ -326,6 +327,7 @@ hr{
       width: 200px;
       top: 10vh;
       background-color: #f5d0d8;
+      z-index: -100;
 
       overflow: hidden;   
       transition: height 1s ease-in-out , width 1s ease-in-out;
