@@ -4,6 +4,7 @@
   margin: 0;
   scroll-behavior: smooth;
   font-size: 1.1rem;
+  overflow: hidden;
 }
 
 h1 , h2 , h3, footer{
@@ -32,7 +33,7 @@ h1 , h2 , h3, footer{
 
   background-color: #fbdce2;
   z-index: 1;
-
+  overflow: visible;
   /* border: 2px solid black; */
 }
 
@@ -226,6 +227,7 @@ hr{
 .link-container{
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
 
@@ -260,8 +262,86 @@ hr{
     margin-left: 15px;
 }
 
-@media only screen and (max-width: 768px){
-  .project-tiles-wrapper{
-    grid-template-columns: 1fr;
+
+@media only screen and (min-width: 501px) {
+  .mobile-only{
+    display: hidden;
+    overflow: hidden;
+    width: 0px;
+    height: 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    content: "";
   }
+}
+
+@media only screen and (max-width: 500px){
+  a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+  }
+
+  .desktop{
+    display: hidden !important;
+    overflow: hidden;
+    width: 0px;
+    height: 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    content: "";
+  }
+
+  #more-icon{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      z-index: 1;
+      height: 60%;
+      margin-right: 10%;
+      padding: 2%;
+  }
+
+  #more-icon:hover #more-info{
+      display: block;
+      height: 200px;
+  }
+
+  .icon-dash{
+      width: 40px;
+      height: 4px;
+      border-radius: 3px;
+      background-color: black;
+  }
+
+  #more-info{
+      position: absolute;
+      right: 0;
+      display: block;
+      flex-direction: column;
+      justify-content: space-evenly;
+      height: 0px;
+      width: 200px;
+      top: 10vh;
+      background-color: #f5d0d8;
+
+      overflow: hidden;   
+      transition: height 1s ease-in-out , width 1s ease-in-out;
+  }
+
+  #section-wrapper{
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      height: 200px;
+      width: 200px;
+      top: 0px;
+      background-color: #f5d0d8;
+      transition: top 1s ease-in-out !important; 
+  }
+
 }

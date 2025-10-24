@@ -9,15 +9,30 @@
     <link rel = "icon" href = "./images/icon.jpg">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
   </head>
   <body>
     <img src = "images/icon.jpg" id = "sunny-icon"/>
     <nav id = "navbar" hidden = "true">
-        <a href ="#introduction">Introduction</a>
-        <a href ="#projects">Projects</a>
-        <a href ="#contact">Contacts</a>
+        
+        <a class = "desktop" href ="#introduction">Introduction</a>
+        <a class = "desktop" href ="#projects">Projects</a>
+        <a class = "desktop" href ="#contact">Contacts</a>
+
+        <div class = "mobile-only" id = "more-icon">
+            <div class = "icon-dash"></div>
+            <div class = "icon-dash"></div>
+            <div class = "icon-dash"></div>
+            
+            <div id = "more-info">
+                <div id = "section-wrapper">
+                    <a  href = "#introduction">Introduction</a>
+                    <a  href = "#projects">Projects</a>
+                    <a  href = "#contact">Contacts</a>
+                </div>
+            </div>
+        </div>
     </nav>
 
     <p id = "introduction"></p>
@@ -29,47 +44,7 @@
     </section>
     
     <section id = "project-section">
-        <p id = "projects"></p>
-        <h2>These are some of my projects</h2>
-        <hr/>
-        <div class = "project-tiles-wrapper">
-            <div class = "project-tiles">
-                <h3 class = "project-title"> Minh xin chào</h3>
-                <img src = "./images/Minh Xin Chao Preview.jpg" alt ="Preview image of" class = "project-tiles-image"/>
-                <a href = "./Webpages/Minhxinchao/index.html" target = "_blank"><p>View Webpage</p></a>
-            </div>
-                
-            <div class = "project-tiles">
-                <h3 class = "project-title">Bussiness Card</h3>
-                <img src = "./images/Business-Card-Preview.jpg" alt ="Preview image of" class = "project-tiles-image"/>
-                <a href = "./Webpages/Business-Card/index.html" target = "_blank"><p>View Webpage</p></a>
-            </div>
-            
-            <div class = "project-tiles">
-                <h3 class = "project-title">Plan coffee Blog Page</h3>
-                <img src = "./images/PLANcoffe.png" class = "project-tiles-image"/>
-                <a href = "./Webpages/PLAN coffee/index.html" target = "_blank"><p>View Webpage</p></a>
-            </div>
-            
-            <div class = "project-tiles">
-                <h3 class = "project-title">Sign in Page</h3>
-                <img src = "./images/signinpage.png" class = "project-tiles-image"/>
-                <a href = "./Webpages/Sign-in Page/index.html" target = "_blank"><p>View Webpage</p></a>
-            </div>
-            
-            <div class = "project-tiles">
-                <h3 class = "project-title">C++ Introduction Page</h3>
-                <img src = "./images/C++Introduction.png" class = "project-tiles-image"/>
-                <a href = "./Webpages/C++ Introduction Page/" target = "_blank"><p>View Webpage</p></a>
-            </div>
-            
-        </div>
-
-        <p id = "talk">If you are interested, click Show all</p>
-        <a href = "https://github.com/SunnyYeahBoiii/Web-Clone/tree/main" target = "_blank" id = "profile-link" >Show all</a>
     </section>
-
-    
 
     <footer id = "contact">   
         <h2>Let's Work Together</h2>
