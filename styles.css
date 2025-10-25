@@ -49,19 +49,43 @@ h1 , h2 , h3, footer{
   width: 100vw;
   height: 100vh;
   /* border: 2px solid black; */
-  text-align: center;
+  /* text-align: center; */
   display: flex;
   background-color: #f7b6c2;
   color: #c25b78;
 }
 
 #introduction{
-  font-size: 2rem !important; 
+  font-size: 2rem; 
+}
+
+@keyframes jiggle {
+  0%{
+    transform: translateY(0%);
+  }
+
+  50%{
+    transform: translateY(20%);
+  }
+
+  80%{
+    transform: translateY(-10%);
+  }
+
+  100%{
+    transform: translateY(0%);
+  }
+}
+
+.split-text{
+  display: inline-block;
+  transform: rotate(deg) !important;
+  animation: jiggle 1.5s ease infinite;
+  animation-delay: calc((var(--position) - 1) * 0.05s);
 }
 
 #welcome-text-container{
   margin: auto;
-  /* border: 2px solid black; */
 }
 
 #projects{
