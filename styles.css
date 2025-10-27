@@ -14,7 +14,7 @@ h1 , h2 , h3, footer{
   position: fixed;
   top: 0;
   height: 10%;
-  z-index: 2;
+  z-index: 11;
 }
 
 #navbar{
@@ -26,11 +26,11 @@ h1 , h2 , h3, footer{
   position: fixed;
   top: 0;
   width: 100vw;
-  height: 10%;
+  height: 10vh;
   font-size: 1.25rem;
 
   background-color: #fbdce2;
-  z-index: 1;
+  z-index: 10;
   overflow: visible;
   /* border: 2px solid black; */
 }
@@ -68,7 +68,7 @@ h1 , h2 , h3, footer{
     transform: translateY(20%);
   }
 
-  80%{
+  7%{
     transform: translateY(-10%);
   }
 
@@ -80,7 +80,7 @@ h1 , h2 , h3, footer{
 .split-text{
   display: inline-block;
   transform: rotate(deg) !important;
-  animation: jiggle 1.5s ease infinite;
+  animation: jiggle 1.5s ease-in infinite;
   animation-delay: calc((var(--position) - 1) * 0.05s);
 }
 
@@ -320,16 +320,9 @@ hr{
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      z-index: 1;
       height: 60%;
       margin-right: 10%;
       padding: 2%;
-  }
-
-  #more-icon:hover #more-info{
-      display: block;
-      height: 200px;
-      
   }
 
   .icon-dash{
@@ -349,11 +342,12 @@ hr{
       width: 200px;
       top: 10vh;
       background-color: #f5d0d8;
-      z-index: -100;
+      z-index: 2;
 
       overflow: hidden;   
       transition: height 1s ease-in-out , width 1s ease-in-out;
   }
+
 
   #section-wrapper{
       position: absolute;
@@ -364,6 +358,7 @@ hr{
       height: 200px;
       width: 200px;
       top: 0px;
+      z-index: 2;
       background-color: #f5d0d8;
       transition: top 1s ease-in-out !important; 
   }
