@@ -5,7 +5,7 @@ const box = document.getElementById("box");
 let isInvisible = true;
 let timeOutId = null;
 
-const transitionStr = ["opacity 0.5s ease , top 0.5s ease" , "opacity 0.5s ease"];
+const transitionStr = ["opacity 0.5s ease , top 0.1s ease" , "opacity 0.5s ease"];
 
 function turnInvisible (){ 
     timeOutId = setTimeout(() => {
@@ -24,7 +24,7 @@ linkBtns.forEach((linkBtn) =>{
         id = id.slice(5)
         box.style.top = `${10 + 21 * (id - 1)}%`;
         box.style.opacity = '1';
-        setTimeout(() => box.style.transition = transitionStr[0] , 500);
+        setTimeout(() => box.style.transition = transitionStr[0] , 1);
         clearTimeout(timeOutId)
     });
 
