@@ -1,3 +1,5 @@
+<div align = "center"><a href = "https://sunnyyeahboiii.github.io/Web-Clone/">This is the Main Page</a></div>
+
 # Web-Clone
 - This is a Project created to clone websites that I came across to pursuit web-development
 
